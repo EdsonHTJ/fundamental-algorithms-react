@@ -1,5 +1,6 @@
 import fibonacci from "./fibonacci.js"
 import prime from "./prime.js"
+import sum from "./sum.js"
 
 function fibonacciTest() {
     for (let i = 0; i < 10; i++) {
@@ -13,5 +14,11 @@ function primeTest() {
     }
 }
 
+function sumTest() {
+    let i = [3, 4 , 5 , "aa"]
+    console.log("The sum of List " + i + "  is : " + sum(i))
+}
+
 fibonacciTest()
 primeTest()
+sumTest()
