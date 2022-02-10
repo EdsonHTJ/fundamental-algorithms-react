@@ -10,7 +10,7 @@ function fibonacci(number) {
     let fib1 = 0
     let fib2 = 1
 
-    // First and second number of fibbonacci sequence already known as 0 and 1
+    // First and second number of fibonacci sequence already known as 0 and 1
     if(number == 1) {
         return fib1        
     }
@@ -19,7 +19,7 @@ function fibonacci(number) {
         return fib2
     }
 
-    // Calculate fibbonacci numbers for n > 2
+    // Calculate fibonacci numbers for n > 2
     for (let i = 0; i < number - 2; i++) {
         let nextFib = fib2 + fib1
         fib1 = fib2
