@@ -2,6 +2,7 @@ function fibonacci(number) {
     if (isNaN(number)) {
         return Error("the input must be a number")
     }
+
     if (number < 1) {
         return Error("Invalid number")
     }
@@ -30,7 +31,4 @@ function fibonacci(number) {
 
 }
 
-
-for (let i = 0; i < 10; i++) {
-    console.log("fib of "+ i + " : " + fibonacci(i))
-}
+export default fibonacci
