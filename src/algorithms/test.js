@@ -1,6 +1,8 @@
 import fibonacci from "./fibonacci.js"
+import mdc from "./mdc.js"
 import prime from "./prime.js"
 import sum from "./sum.js"
+import quickSort from "./quicksort.js"
 
 function fibonacciTest() {
     for (let i = 0; i < 10; i++) {
@@ -19,6 +21,20 @@ function sumTest() {
     console.log("The sum of List " + i + "  is : " + sum(i))
 }
 
+function mdcTest() {
+    let a = 133231
+    let b = 21
+    console.log("the mdc of " + a + " and " + b + " is : " + mdc(a,b))
+}
+
+function quickTest() {
+    let arr = [9, 8, 7, 6, 5 , 4, 3, 2, 1 , -1]
+    arr = quickSort(arr, 0 , arr.length - 1)
+    console.log(arr)
+}
+
 fibonacciTest()
 primeTest()
 sumTest()
+mdcTest()
+quickTest()
