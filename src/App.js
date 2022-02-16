@@ -1,16 +1,24 @@
 import './App.css';
+import Home from './pages/home';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-        <div class="container">
-           <a href="fib" class="btn">Fibonacci</a>
-           <a href="sum" class="btn">Somatorio</a>
-           <a href="prime" class="btn">Checagem de primo</a>
-           <a href="mdc" class="btn">MDC</a>
-           <a href="ord" class="btn">Ordenação</a>
-        </div>
-    </div>
+    <Router>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Routes>
+          <Route path="/about">
+          </Route>
+          <Route path="/users">
+          </Route>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+    </Router>
   );
 }
 
