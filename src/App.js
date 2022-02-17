@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './pages/home';
+import Fibonacci from './pages/fibonacci/fibonacci'
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,8 +15,7 @@ function App() {
         <Routes>
           <Route path="/about">
           </Route>
-          <Route path="/users">
-          </Route>
+          <Route path="/fib" element={<Fibonacci/>}/>
           <Route path="/" element={<Home/>}/>
         </Routes>
     </Router>
