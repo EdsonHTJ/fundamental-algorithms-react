@@ -6,6 +6,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Prime from './pages/primes/primes';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about">
           </Route>
           <Route path="/fib" element={<Fibonacci/>}/>
+          <Route path='/prime' element={<Prime/>}/>
           <Route path="/" element={<Home/>}/>
         </Routes>
     </Router>
