@@ -7,15 +7,16 @@
     justify-content: center;
     color: white;
     font-weight: 200;
+    gap: 3rem;
 }
 
-.container h1{
+.head{
   font-weight: 100;
   font-size: 2rem;
 }
 
 .container input {
-  min-width: 50vh;
+  min-width: 50vw;
   padding: .8rem;
   background: transparent;
   border: none;
@@ -27,6 +28,22 @@
 
 .container input:focus {
   outline: none;
+}
+
+.result {
+  min-width: 50vw;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.container input::-webkit-outer-spin-button,
+.container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container input[type = number] {
+  -moz-appearance: textfield;
 }
 
 /*

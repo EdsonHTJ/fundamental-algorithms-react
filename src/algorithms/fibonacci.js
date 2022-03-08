@@ -1,22 +1,23 @@
 function fibonacci(number) {
     if (isNaN(number)) {
-        return Error("the input must be a number")
+        return ("the input must be a number")
     }
 
     if (number < 1) {
-        return Error("Invalid number")
+        return ("Invalid number")
     }
+    number = Number(number)
 
     // Memory that will store the values of fib sequece
     let fib1 = 0
     let fib2 = 1
 
     // First and second number of fibonacci sequence already known as 0 and 1
-    if(number == 1) {
+    if(number === 1) {
         return fib1        
     }
 
-    if(number == 2) {
+    if(number === 2) {
         return fib2
     }
 
