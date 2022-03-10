@@ -7,6 +7,7 @@ import {
   Route,
 } from "react-router-dom";
 import Prime from './pages/primes/primes';
+import Quicksort from './pages/quicksort/quicksort';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           </Route>
           <Route path="/fib" element={<Fibonacci/>}/>
           <Route path='/prime' element={<Prime/>}/>
+          <Route path='/sort' element={<Quicksort/>}/>
           <Route path="/" element={<Home/>}/>
         </Routes>
     </Router>
