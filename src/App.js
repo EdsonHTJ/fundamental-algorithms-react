@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Prime from './pages/primes/primes';
 import Quicksort from './pages/quicksort/quicksort';
+import Sum from './pages/sum/sum';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/fib" element={<Fibonacci/>}/>
           <Route path='/prime' element={<Prime/>}/>
           <Route path='/sort' element={<Quicksort/>}/>
+          <Route path='/sum' element={<Sum/>}/>
           <Route path="/" element={<Home/>}/>
         </Routes>
     </Router>
