@@ -2,12 +2,12 @@
 function Home() {
     return (
       <div className="App">
-          <div class="container">
-             <a href="fib" class="btn">Fibonacci</a>
-             <a href="sum" class="btn">Somatorio</a>
-             <a href="prime" class="btn">Checagem de primo</a>
-             <a href="mdc" class="btn">MDC</a>
-             <a href="sort" class="btn">Ordenação</a>
+          <div className="container">
+             <a href="fib" className="btn">Fibonacci</a>
+             <a href="sum" className="btn">Somatorio</a>
+             <a href="prime" className="btn">Checagem de primo</a>
+             <a href="mdc" className="btn">MDC</a>
+             <a href="sort" className="btn">Ordenação</a>
           </div>
       </div>
     );

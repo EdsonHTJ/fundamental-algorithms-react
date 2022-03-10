@@ -9,6 +9,7 @@ import {
 import Prime from './pages/primes/primes';
 import Quicksort from './pages/quicksort/quicksort';
 import Sum from './pages/sum/sum';
+import Mdc from './pages/mdc/mdc';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/prime' element={<Prime/>}/>
           <Route path='/sort' element={<Quicksort/>}/>
           <Route path='/sum' element={<Sum/>}/>
+          <Route path='/mdc' element={<Mdc/>}/>
           <Route path="/" element={<Home/>}/>
         </Routes>
     </Router>
