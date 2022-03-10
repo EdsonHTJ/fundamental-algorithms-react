@@ -1,10 +1,10 @@
 function fibonacci(number) {
     if (isNaN(number)) {
-        return ("the input must be a number")
+        return "A entrada precisa ser um numero"
     }
 
     if (number < 1) {
-        return ("Invalid number")
+        return "Indice invalido"
     }
     number = Number(number)
 
