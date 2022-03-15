@@ -12,7 +12,7 @@ function Prime() {
     function getText(value) {
         return (
             <div>
-                {<h1 className={styles.result}>{value}</h1>}
+                {<h1 className={styles.result}>{value? "é primo":"não é primo"}</h1>}
             </div>)
     }
     return (
