@@ -21,7 +21,7 @@ function Fibonacci() {
     }
     return (
         <div className = {styles.container}>
-            <h1 className={styles.head}>Por favor insira o numero do indice de fibonacci</h1>
+            <h1 className={styles.head}>Insira o numero do indice de fibonacci</h1>
             <form>
             <input type="number" onChange={({target})=> resultChange(target)} name="number" className="question" id="nme" required autoComplete="off" />
             </form>

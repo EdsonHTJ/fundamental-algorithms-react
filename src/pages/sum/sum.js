@@ -18,7 +18,7 @@ function Sum() {
     }
     return (
         <div className = {styles.container}>
-            <h1 className={styles.head}>Por favor insira uma lista de numeros para serem somados</h1>
+            <h1 className={styles.head}>Insira uma lista de numeros para serem somados</h1>
             <form>
             <input onChange={({target})=> resultChange(target)} name="number" className="question" id="nme" required autoComplete="off" />
             </form>
