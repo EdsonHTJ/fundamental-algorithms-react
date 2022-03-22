@@ -2,7 +2,7 @@
 function Home() {
     return (
       <div className="App">
-          <div className="container">
+          <div className="containerHome">
              <h1>Algoritimos Fundamentais</h1>
              <a href="fib" className="btn">Fibonacci</a>
              <a href="sum" className="btn">Somatorio</a>

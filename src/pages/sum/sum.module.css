@@ -6,13 +6,21 @@
     align-items: center;
     justify-content: center;
     color: white;
-    font-weight: 200;
+    font-weight: 300;
     gap: 3rem;
 }
 
 .head{
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.desc{
   font-weight: 100;
   font-size: 2rem;
+  text-align: center;
+  font-style: italic;
 }
 
 .container input {

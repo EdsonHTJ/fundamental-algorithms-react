@@ -18,11 +18,14 @@ function Sum() {
     }
     return (
         <div className = {styles.container}>
+            <div>
             <h1 className={styles.head}>Insira uma lista de numeros para serem somados</h1>
+            <p className={styles.desc}>as entradas devem ser separadas por espaço ex: 1 5 6 7</p>
+            </div>
+            {getText(result)}
             <form>
             <input onChange={({target})=> resultChange(target)} name="number" className="question" id="nme" required autoComplete="off" />
             </form>
-            {getText(result)}
         </div>
     )
 }
