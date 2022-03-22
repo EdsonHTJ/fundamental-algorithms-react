@@ -10,10 +10,18 @@ function Prime() {
         setResult(isPrime)
     }
     function getText(value) {
-        return (
-            <div>
-                {<h1 className={styles.result}>{value? "é primo":"não é primo"}</h1>}
-            </div>)
+        if (typeof value == "boolean") {
+            return (
+                <div>
+                    {<h1 className={styles.result}>{value? "é primo":"não é primo"}</h1>}
+                </div>)
+            // variable is a boolean
+        }else {
+            return (
+                <div>
+                    {<h1 className={styles.result}>{value}</h1>}
+                </div>)
+        }
     }
     return (
         <div className = {styles.container}>

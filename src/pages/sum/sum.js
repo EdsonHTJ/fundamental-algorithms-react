@@ -5,7 +5,7 @@ function Sum() {
     const [result, setResult] = useState(null)
 
     function resultChange(target) {
-        let values = target.value.split(",").map(item => { return Number(item)}).filter(item => !isNaN(item))
+        let values = target.value.split(" ").map(item => { return Number(item)}).filter(item => !isNaN(item))
         let res = sum(values)
         console.log(res)
         setResult(res)

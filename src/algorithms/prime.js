@@ -5,8 +5,12 @@ function prime(number) {
 
     number = Number(number)
 
+    if (number < 0) {
+        return "a entrada deve ser um numero natural"
+    }
+
     // Prime check
-    if (number === 1) {
+    if (number === 1 || number === 0) {
         return false
     }
 
