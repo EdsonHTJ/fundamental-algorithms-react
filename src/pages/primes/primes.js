@@ -10,6 +10,14 @@ function Prime() {
         setResult(isPrime)
     }
     function getText(value) {
+        if (typeof value === 'string' || value instanceof String) {
+            return (
+                <div>
+                    {<h1 className={styles.desc}>{"Erro: " + value}</h1>}
+                </div>
+            )
+        }
+        
         if (typeof value == "boolean") {
             return (
                 <div>

@@ -1,6 +1,6 @@
 function count(values, cut) {
     if (!Array.isArray(values)) {
-        return "Input precisa ser um array"
+        return "A entrada precisa ser um array"
     }
 
     if (isNaN(cut)) {

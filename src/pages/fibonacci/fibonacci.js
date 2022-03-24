@@ -8,12 +8,31 @@ function Fibonacci() {
         const fib = fibonacci(target.value)
         console.log(fib)
 
-        setResult(fib.join(" "))
+        setResult(fib)
     }
     function getFibText(value) {
         if (value === null) {
             return
         }
+
+        if (typeof value === 'string' || value instanceof String) {
+            return (
+                <div>
+                    {<h1 className={styles.desc}>{"Erro: " + value}</h1>}
+                </div>
+            )
+        }
+
+        value = value.join(" ")
+        
+        if (typeof value === 'string' || value instanceof String) {
+            return (
+                <div>
+                    {<h1 className={styles.desc}>{"Erro: " + value}</h1>}
+                </div>
+            )
+        }
+
         return (
             <div>
                 {<h1 className={styles.result}>{value}</h1>}

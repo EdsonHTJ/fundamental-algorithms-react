@@ -8,16 +8,28 @@ function Quicksort() {
         let values = target.value.split(" ").map(item => { return Number(item)}).filter(item => !isNaN(item))
         let res = quickSort(values, 0, values.length - 1)
         console.log(res)
-        res = res.map(item => { 
-            return item + " "
-        })
         setResult(res)
     }
     function getText(value) {
+        if (value == null) {
+            return
+        }
+        if (typeof value === 'string' || value instanceof String) {
             return (
                 <div>
-                    {<h1 className={styles.result}>{value}</h1>}
+                    {<h1 className={styles.desc}>{"Erro: " + value}</h1>}
                 </div>
+            )
+        }
+
+        value = value.map(item => { 
+            return item + " "
+        })
+
+        return (
+            <div>
+                {<h1 className={styles.result}>{value}</h1>}
+            </div>
         )
     }
     return (

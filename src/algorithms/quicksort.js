@@ -1,7 +1,7 @@
 function partition(items, left, right) {
 
     if (!Array.isArray(items)) {
-        return "Input precisa ser um array"
+        return "A entrada precisa ser um array"
     }
 
     let pivot = items[Math.floor((right + left) / 2)]
