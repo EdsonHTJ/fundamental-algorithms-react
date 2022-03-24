@@ -52,8 +52,8 @@ function Count() {
 
             </div>
             <form>
-            <input onChange={({target})=> resultChangeCut(target)} name="cut" className="question" id="nme" required autoComplete="off" />
-            <input onChange={({target})=> resultChangeValues(target)} name="values" className="question" id="nme" required autoComplete="off" />
+            <input type="number" onChange={({target})=> resultChangeCut(target)} name="cut" id="nme" required autoComplete="off" />
+            <input onChange={({target})=> resultChangeValues(target)} name="values" id="nme" required autoComplete="off" />
             </form>
             {getResultText(result)}
         </div>
