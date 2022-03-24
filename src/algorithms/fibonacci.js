@@ -21,14 +21,16 @@ function fibonacci(number) {
         return fib2
     }
 
+    let fibNumbers = [fib1, fib2]
     // Calculate fibonacci numbers for n > 2
     for (let i = 0; i < number - 2; i++) {
         let nextFib = fib2 + fib1
         fib1 = fib2
         fib2 = nextFib
+        fibNumbers.push(nextFib)
     }
 
-    return fib2
+    return fibNumbers
 
 }
 

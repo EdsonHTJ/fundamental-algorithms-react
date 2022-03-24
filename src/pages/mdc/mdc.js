@@ -45,7 +45,10 @@ function Mdc() {
     }
     return (
         <div className = {styles.container}>
+            <div>
             <h1 className={styles.head}>Insira dois numeros para descobrir o mdc</h1>
+            <h1 className={styles.desc}>ambos os numeros precisam ser positivos</h1>
+            </div>
             <form>
             <input type="number" onChange={({target})=> resultChangeMdc1(target)} name="number" className="question" id="nme" required autoComplete="off" />
             <input type="number" onChange={({target})=> resultChangeMdc2(target)} name="number2" className="question" id="nme" required autoComplete="off" />

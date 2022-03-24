@@ -7,7 +7,8 @@ function Fibonacci() {
     function resultChange(target) {
         const fib = fibonacci(target.value)
         console.log(fib)
-        setResult(fib)
+
+        setResult(fib.join(" "))
     }
     function getFibText(value) {
         if (value === null) {
@@ -21,7 +22,10 @@ function Fibonacci() {
     }
     return (
         <div className = {styles.container}>
+            <div>
             <h1 className={styles.head}>Insira o numero do indice de fibonacci</h1>
+            <h1 className={styles.desc}>o numero precisa ser maior do que zero</h1>
+            </div>
             <form>
             <input type="number" onChange={({target})=> resultChange(target)} name="number" className="question" id="nme" required autoComplete="off" />
             </form>

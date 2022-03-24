@@ -25,7 +25,10 @@ function Prime() {
     }
     return (
         <div className = {styles.container}>
+            <div>
             <h1 className={styles.head}>Insira o numero que deseja checar se é primo</h1>
+            <h1 className={styles.desc}>o numero precisa ser maior do que zero</h1>
+            </div>
             <form>
             <input type="number" onChange={({target})=> resultChange(target)} name="number" className="question" id="nme" required autoComplete="off" />
             </form>
