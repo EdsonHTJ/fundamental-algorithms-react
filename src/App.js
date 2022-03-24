@@ -10,6 +10,7 @@ import Prime from './pages/primes/primes';
 import Quicksort from './pages/quicksort/quicksort';
 import Sum from './pages/sum/sum';
 import Mdc from './pages/mdc/mdc';
+import Count from './pages/count/count';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
           <Route path='/sort' element={<Quicksort/>}/>
           <Route path='/sum' element={<Sum/>}/>
           <Route path='/mdc' element={<Mdc/>}/>
+          <Route path='/mdc' element={<Mdc/>}/>
+          <Route path='/count' element={<Count/>}/>
           <Route path="/" element={<Home/>}/>
         </Routes>
     </Router>

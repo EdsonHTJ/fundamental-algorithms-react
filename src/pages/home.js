@@ -9,7 +9,7 @@ function Home() {
              <a href="prime" className="btn">Checagem de primo</a>
              <a href="mdc" className="btn">MDC</a>
              <a href="sort" className="btn">Ordenação</a>
-             <a href="cont" className="btn">Contagem</a>
+             <a href="count" className="btn">Contagem</a>
 
           </div>
       </div>

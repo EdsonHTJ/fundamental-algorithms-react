@@ -1,0 +1,69 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 200;
+    gap: 3rem;
+  }
+  
+  .head{
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  }
+  
+  .desc{
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+  }
+  
+  .container input {
+    min-width:40vw;
+    max-width: 50vw;
+    padding: .8rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  
+  .container input:focus {
+  outline: none;
+  }
+  
+  .result {
+  min-width: 50vw;
+  text-align: center;
+  font-size: 5rem;
+  }
+  
+  .container input::-webkit-outer-spin-button,
+  .container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+  
+  .container input[type = number] {
+  -moz-appearance: textfield;
+  }
+  
+  /*
+  Basic input element using psuedo classes
+  */
+  
