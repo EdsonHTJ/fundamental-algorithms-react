@@ -1,35 +1,30 @@
 function partition(items, left, right) {
 
-    if (!Array.isArray(items)) {
-        return "A entrada precisa ser um array"
-    }
+        let pivot = items[right];
+        let i = (left - 1); 
 
-    let pivot = items[Math.floor((right + left) / 2)]
-    let i = left
-    let j = right
-
-    while (i <= j) {
-        while (items[i] < pivot) {
-            i++;
+        for (let j = left; j <= right - 1; j++)
+        {
+            if (items[j] < pivot)
+            {
+                i++; 
+                let aux = items[i]
+                items[i] = items[j]
+                items[j] = aux
+            }
         }
-        while (items[j] > pivot) {
-            j--;
-        }
-        if (i <= j) {
-            
-            let m = items[i]
-            items[i] = items[j]
-            items[j] = m
-
-            i++;
-            j--;
-        }
-    }
-
-    return i;
+        let aux = items[i + 1]
+        items[i + 1] = items[right]
+        items[right] = aux
+        return (i + 1);
+        
 }
 
 function quickSort(items, left, right) {
+
+    if (!Array.isArray(items)) {
+        return "A entrada precisa ser um array"
+    }
 
     let index;
 

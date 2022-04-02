@@ -24,14 +24,6 @@ function Fibonacci() {
         }
 
         value = value.join(" ")
-        
-        if (typeof value === 'string' || value instanceof String) {
-            return (
-                <div>
-                    {<h1 className={styles.desc}>{"Erro: " + value}</h1>}
-                </div>
-            )
-        }
 
         return (
             <div>

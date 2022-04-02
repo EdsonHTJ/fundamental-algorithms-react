@@ -4,7 +4,10 @@ function mdc(num1, num2) {
         return "entrada invalida"
     }
 
+    //The rest of division 
     let rest = 0
+
+    //Calculates the mdc
     do {
         rest = num1 % num2;
 
