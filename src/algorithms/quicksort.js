@@ -17,7 +17,7 @@ function partition(items, left, right) {
         items[i + 1] = items[right]
         items[right] = aux
         return (i + 1);
-        
+
 }
 
 function quickSort(items, left, right) {
@@ -29,17 +29,11 @@ function quickSort(items, left, right) {
     let index;
 
     if (items.length > 1) {
-
-        index = partition(items, left, right);
-
-        if (left < index - 1) { 
+        if (left < right){
+            index = partition(items, left, right);
             quickSort(items, left, index - 1);
-        }
-
-        if (index < right) { 
             quickSort(items, index, right);
         }
-
     }
 
     return items;
