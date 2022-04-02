@@ -32,7 +32,7 @@ function quickSort(items, left, right) {
         if (left < right){
             index = partition(items, left, right);
             quickSort(items, left, index - 1);
-            quickSort(items, index, right);
+            quickSort(items, index + 1, right);
         }
     }
 
